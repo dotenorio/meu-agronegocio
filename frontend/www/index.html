@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
+  <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title>Meu Agronegócio</title>
+</head>
+
+<body>
+  <div class="swiper-container swiper-container-fullscreen">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide vertical-align-center light-green" id="swiper-home">
+        <h1>Meu Agronegócio</h1>
+        <p class="text-light-green-100">Gestão na palma da mão</p>
+        <button class="white text-light-green-900 radius margin-top" onclick="slideNext()">
+          Começar agora
+        </button>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Seus dados</h1>
+        </div>
+        <div class="list">
+          <div class="item">
+            <label class="text-green">Nome</label>
+            <input type="text" placeholder="Nome completo">
+          </div>
+          <div class="item">
+            <label class="text-green">E-mail</label>
+            <input type="email" placeholder="email@email.com">
+          </div>
+          <div class="item">
+            <label class="text-green">Senha</label>
+            <input type="password" placeholder="Senha segura">
+          </div>
+          <div class="item">
+            <label class="text-green">Telefone</label>
+            <input type="tel" placeholder="(00) 0 0000-0000">
+          </div>
+          <div class="item">
+            <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Suas propriedades</h1>
+        </div>
+        <div class="list">
+          <div class="item">
+            <label class="text-green">Nome</label>
+            <input type="text" placeholder="Nome da propriedade">
+          </div>
+          <div class="item">
+            <label class="text-green">Endereço</label>
+            <input type="tel" placeholder="Endereço da propriedade">
+          </div>
+          <div class="item">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14644.186261403656!2d-51.94214455!3d-23.422685!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1525499644587"
+              width="330" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Sua colheita</h1>
+        </div>
+        <div class="row">
+          <div class="col align-center">
+            <div class="padding">
+              <img src="img/corn.svg" alt="Milho" class="border-light-green padding colheita-imagem light-green-200 radius">
+            </div>
+            <b>Milho</b>
+          </div>
+          <div class="col align-center">
+            <div class="padding">
+              <img src="img/soy.svg" alt="Milho" class="border-light-green padding colheita-imagem radius">
+            </div>
+            Soja
+          </div>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <div class="list col">
+            <div class="item">
+              <label class="text-green">Data de Início</label>
+              <input type="date">
+            </div>
+          </div>
+          <div class="list col">
+            <div class="item">
+              <label class="text-green">Duração em dias</label>
+              <input type="number" placeholder="160">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="list">
+            <div class="item">
+              <label class="text-green">Custo da saca por alqueire</label>
+              <input type="text" placeholder="20,00">
+            </div>
+            <div class="item">
+              <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Recursos</h1>
+        </div>
+        <div class="list">
+          <div class="item">
+            <label class="text-green">Maquinário</label>
+            <input type="text" placeholder="Digite para encontrar uma máquina..">
+            <div class="space"></div>
+            <span class="text-small green radius padding">Trator 55-70 cv</span>
+            <span class="text-small green radius padding">Colhedoras Axiais 230-255 cv</span>
+          </div>
+          <div class="item">
+            <label class="text-green">Número de funcionários</label>
+            <input type="number" placeholder="2">
+          </div>
+          <div class="item">
+            <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Custos Fixos</h1>
+        </div>
+        <div class="list">
+          <div class="item label-fixed">
+            <label class="text-green">Semente</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Herbicida</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Fungicida</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Inseticida</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Secante</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Custo da colheita</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Frete</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Estocamento</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item">
+            <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Custos Variáveis</h1>
+        </div>
+        <div class="list">
+          <div class="item label-fixed">
+            <label class="text-green">Seu tempo de trabalho</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Agronomo</label>
+            <input type="number" placeholder="0,00 (2% do CF)">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Diesel</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item label-fixed">
+            <label class="text-green">Manutenções diversas</label>
+            <input type="number" placeholder="0,00">
+          </div>
+          <div class="item">
+            <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Atividades</h1>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col" id="datepicker"></div>
+        </div>
+        <div class="space"></div>
+        <div class="padding border-light-green">
+          <p>
+            <b>Atividade</b>
+          </p>
+          <p>Realizar uma atividade no dia 15/05/2012</p>
+        </div>
+        <div class="padding border-light-green">
+          <p>
+            <b>Outra Atividade</b>
+          </p>
+          <p>Realizar outra atividade no dia 20/05/2012</p>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <div class="list">
+            <div class="item">
+              <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <div class="left">
+            <button onclick="slidePrev()" class="icon ion-android-arrow-back"></button>
+          </div>
+          <h1 class="align-center">Safras</h1>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col" style="margin: 0 10px;">
+            <div class="padding border-light-green shadow radius">
+              <p>
+                <b>Safra 1</b>
+              </p>
+              <p>de 10/10/2012 à 10/12/2012</p>
+              <p>R$ 2010,00</p>
+            </div>
+            <div class="space"></div>
+            <div class="padding border-light-green shadow radius">
+              <p>
+                <b>Safra 2</b>
+              </p>
+              <p>de 10/01/2013 à 10/03/2013</p>
+              <p>R$ 2010,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-black"></div>
+  </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="mobileui/mobileui.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

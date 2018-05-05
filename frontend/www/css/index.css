@@ -1,0 +1,44 @@
+#swiper-home {
+  background-image: url(../img/home_soja.jpg);
+  background-blend-mode: darken;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#swiper-home h1 {
+  font-family: 'Faster One', cursive;
+  font-weight: 400;
+}
+
+#swiper-home p {
+  font-family: 'Unica One', cursive;
+  font-size: 18px;
+  text-shadow: black 2px 1px 5px;
+}
+
+.swiper-dados .header h1 {
+  font-size: 100%;
+}
+
+.colheita-imagem {
+  height: 150px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  background: #33691e !important;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background: #7cb342 !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  background: #ffffff !important;
+}
+
+.ui-widget.ui-widget-content {
+  border-color: #33691e !important;  
+  width: 91% !important;
+  margin: 0 4.5% !important;
+}

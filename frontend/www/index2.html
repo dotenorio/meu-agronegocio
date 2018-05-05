@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
+  <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title>Meu Agronegócio</title>
+</head>
+
+<body>
+  <div class="menu menu-right green" id="notificacoes">
+    <button class="text-white icon ion-android-close" onclick="closeMenu('notificacoes')"></button>
+    <div class="padding border-light-green">
+      <p>
+        <b>Vai chover!!</b>
+      </p>
+      <p>Você havia planejado uma atividade para hoje, mas talvez por conta da chuva, seja interessante marcar para outro dia.</p>
+    </div>
+    <div class="padding border-light-green">
+      <p>
+        <b>Sua safra está acabando!!</b>
+      </p>
+      <p>Vamos começar a planejar a próxima?</p>
+    </div>
+  </div>
+  <div class="swiper-container swiper-container-fullscreen">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide vertical-align-center light-green" id="swiper-home">
+        <h1>Meu Agronegócio</h1>
+        <p class="text-light-green-100">Gestão na palma da mão</p>
+        <div class="space"></div>
+        <div class="list white radius">
+          <div class="item">
+            <input type="email" placeholder="email@email.com">
+          </div>
+          <div class="item">
+            <input type="password" placeholder="senha">
+          </div>
+          <div class="item">
+            <h2 style="text-align: left; font-weight: normal">Permanecer conectado</h2>
+            <div class="right">
+              <input type="checkbox" class="switch green" checked>
+            </div>
+          </div>
+          <div class="item">
+            <button class="light-green text-white radius full" onclick="slideNext()">Continuar</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide has-header white swiper-dados">
+        <div class="header light-green-900">
+          <h1 class="align-center">Meu Agronegócio</h1>
+          <div class="right">
+            <button class="icon ion-android-notifications red radius" onclick="openMenu('notificacoes')"> 2</button>
+          </div>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col" style="margin: 0 10px 10px;">
+            <p>Planejamento de safras:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" style="margin: 0 10px;">
+            <div class="padding border-light-green shadow radius">
+              <p>
+                <b>Safra 1</b>
+              </p>
+              <p>de 10/10/2012 à 10/12/2012</p>
+              <p>R$ 2010,00</p>
+            </div>
+          </div>
+          <div class="col" style="margin: 0 10px;">
+            <div class="padding border-light-green shadow radius">
+              <p>
+                <b>Safra 2</b>
+              </p>
+              <p>de 10/01/2013 à 10/03/2013</p>
+              <p>R$ 2010,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col" style="margin: 0 10px 10px;">
+            <p>Clima:</p>
+            <div class="align-center">
+              <iframe frameborder="0" allowtransparency="yes" scrolling="no" width="300" height="200" src="http://www.tempoagora.com.br/ta-widgets?cidades=,Maringa-PR&amp;tipo=horizontal"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col" style="margin: 0 10px 10px;">
+            <p>Cotações:</p>
+            <div class="align-center">
+              <script type="text/javascript" src="http://www.noticiasagricolas.com.br/widget/cotacoes.js.php?id=82&fonte=Verdana&tamanho=10pt&largura=340px&cortexto=333333&corcabecalho=B2C3C6&corlinha=DCE7E9&imagem=true&output=js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-black"></div>
+  </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="mobileui/mobileui.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

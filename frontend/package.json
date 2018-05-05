@@ -1,0 +1,24 @@
+{
+    "name": "meuagronegocio",
+    "displayName": "Meu Agronegócio",
+    "version": "1.0.0",
+    "description": "Gestão na palma da mão",
+    "main": "index.js",
+    "scripts": {
+        "start": "mobileui preview",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Equipe Meu Agronegócio",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-plugin-calendar": "git+https://github.com/Telerik-Verified-Plugins/Calendar.git",
+        "cordova-plugin-datepicker": "^0.9.3"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-calendar": {},
+            "nl.x-services.plugins.calendar": {},
+            "cordova-plugin-datepicker": {}
+        }
+    }
+}
